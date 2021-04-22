@@ -13,3 +13,5 @@ def index(request):
 
 
 def test(request):
+    title_list = get_title_text("APPLE")
+    return HttpResponse(title_list)
