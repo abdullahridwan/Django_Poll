@@ -13,7 +13,7 @@ googlenews = GoogleNews(start='02/01/2020', end='02/28/2020')
 
 #googlenews.set_time_range('02/01/2020', '02/28/2020')
 
-
+'''
 googlenews.search('emeritus senior living')
 # googlenews.get_news('APPLE')
 
@@ -33,3 +33,16 @@ for item in diction:
 
 # for item in title_list:
 #    print(item + "\n")
+'''
+
+
+def get_title_text(search_string):
+    googlenews.search(search_string)
+    title_list = googlenews.get_texts()
+    return title_list
+
+
+def get_results(search_string):
+    googlenews.search(search_string)
+    diction = googlenews.result()
+    return diction
