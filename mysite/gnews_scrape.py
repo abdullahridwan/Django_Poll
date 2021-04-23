@@ -4,7 +4,7 @@ googlenews = GoogleNews()
 googlenews = GoogleNews(lang='en')
 googlenews = GoogleNews(period='7d')
 googlenews = GoogleNews(encode='utf-8')
-googlenews = GoogleNews(start='02/01/2020', end='02/28/2020')
+googlenews = GoogleNews(start='02/01/2019', end='02/28/2020')
 
 # googlenews.set_lang('en')
 # googlenews.set_period('7d')
