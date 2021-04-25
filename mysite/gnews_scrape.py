@@ -42,6 +42,7 @@ def get_title_text(search_string):
     return title_list
 
 
+#gets json of results
 def get_results(search_string):
     googlenews.search(search_string)
     diction = googlenews.result()
